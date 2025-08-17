@@ -66,11 +66,21 @@ body {
     color: white !important;
 }
 
-.navbar-logo {
-    height: 50px;
-    width: auto;
-    max-width: 200px;
-    object-fit: contain;
+.logo-text {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.logo-text i {
+    color: var(--accent-color);
+    font-size: 2rem;
+}
+
+.logo-text span {
+    margin-left: 0.5rem;
 }
 
 .navbar-nav .nav-link {
@@ -394,6 +404,25 @@ body {
     box-shadow: var(--shadow-heavy);
 }
 
+.product-image {
+    width: 100%;
+    height: 200px;
+    margin: 0 auto 1.5rem;
+    border-radius: 15px;
+    overflow: hidden;
+    background: var(--light-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
 .product-icon {
     width: 80px;
     height: 80px;
@@ -474,6 +503,22 @@ body {
     border-radius: 15px;
     margin-top: 1.5rem;
     text-align: center;
+}
+
+.infrastructure-image {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow-medium);
+}
+
+.facility-img {
+    width: 100%;
+    height: auto;
+    transition: var(--transition);
+}
+
+.infrastructure-image:hover .facility-img {
+    transform: scale(1.05);
 }
 
 .equipment-grid {
